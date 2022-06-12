@@ -4,193 +4,250 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="apple-touch-icon" href="/portfolio/images/Logo1.PNG" />
-    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/portfolio/css/normlize.css" />
-    <link rel="stylesheet" href="/portfolio/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/portfolio/images/MrCode.ico" />
-    <title>Porofolio</title>
+    <meta name="description" content="Web Developer portfolio" />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normlize.css">
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet" />
+    <!-- icon -->
+    <link rel="icon" href="images/MrCode.ico" />
+    <title>Mr.Code</title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
+    <div class="loader">
+        <img src="Logo1.png" alt="logo" width=90/>
+
+    </div>
+    </div>
+    <section class="header" id="header">
+
+
+        <div class="navigation">
+
             <div class="logo">
-                <img src="/portfolio/Logo1 (1).svg" alt="logo" width="80" height="80" />
+                <img src="Logo1.png" alt="logo" width="60" />
             </div>
             <nav>
-                <ul class="nav-links">
-                    <li><a href="#landing">Main</a></li>
-                    <li><a href="#about">About</a></li>
+                <ul>
+
+                    <li class="active"><a href="#landing">Main</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+            <div class="icons">
+                <ul>
+                    <li class="active">
+                        <a href="#landing">
+                            <img src="images/home (1).png" alt="" width="40">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects">
+                            <img src="images/projects.png" alt="" width="40">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services"><img src="images/customer-service.png" alt="" width="40"></a>
+                    </li>
+                    <li>
+                        <a href="#skills"><img src="images/skills.png" alt="" width="40"></a>
+                    </li>
+                    <li>
+                        <a href="#contact"><img src="images/contact.png" alt="" width="40"></a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </section>
     <section class="landing" id="landing">
         <div class="container">
-            <div class="text">
-                <p>Hello</p>
-                <h1>Im Amer</h1>
-                <h2>Freelance Web Designer & Developer</h2>
-                <a href="#">More</a>
+            <div class="description">
+                <h1>Hello!</h1>
+                <div class="text">
+                    <p>
+                        I am a web developer my name is Amer (Mr.Code) based in Iraq. I have a passion for creating beautiful and functional websites.
+                    </p>
+                </div>
+                <div class="buttons">
+                    <a href="#">Hire me</a>
+                </div>
             </div>
-            <div class="image">
-                <img src="/portfolio/Logo1 (1).svg" alt="logo" width="400" height="400" />
+            <div class="image-holder">
+                <img src="images/mee.png" alt="me" width="350" height="450">
+
             </div>
         </div>
     </section>
-    <section class="about" id="about">
+    <section class="projects" id="projects">
+        <div class="main-title">
+            <h1>Projects</h1>
+        </div>
         <div class="container">
             <div class="box">
-                <img src="/portfolio/Logo1 (1).svg" alt="about" width="400" height="400" />
+                <img src="images/project-1.png" alt="project" />
+
+                <div class="description">
+                    <p>E-commerce website</p>
+                    <a href="https://mrcode93.github.io/e-commerce/" target="_blank">visit</a
+            >
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/project-2.png" alt="" />
+          <div class="description">
+            <p>Advice-generator-app</p>
+            <a href="https://mrcode93.github.io/Advice-generator-app-solution/" target="_blank">visit</a>
+                </div>
             </div>
             <div class="box">
-                <h2 class="main-title">About Me</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum quam atque, quisquam optio unde dicta labore voluptas dolor blanditiis vitae earum doloremque ab suscipit quas quo expedita officia repellat natus facere reiciendis. Laborum
-                    sed, quibusdam rerum pariatur aperiam omnis?
-                </p>
-                <button type="button" class="one">HIRE ME</button>
-
-                <a>Download CV</a>
+                <img src="images/project-1.png" alt="" />
+                <div class="description">
+                    <p>E-commerce website</p>
+                    <a href="#">visit</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/project-1.png" alt="" />
+                <div class="description">
+                    <p>E-commerce website</p>
+                    <a href="#">visit</a>
+                </div>
             </div>
         </div>
     </section>
-    <section class="services" id="services">
-        <h2 class="main-title">Services</h2>
+    <section class="sevices" id="services">
+        <div class="main-title">
+            <h1>Services</h1>
+        </div>
         <div class="container">
-            <div class="serve">
-                <div class="right">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="100" height="100">
-              <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
-              <path
-                d="M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"
-              />
-            </svg>
-                    <h3>Web Development</h3>
+            <div class="box">
+                <i class="fas fa-file"></i>
+                <div class="text">
+                    <h2>Create WebSites</h2>
+                    <p>build a web site with HTML, CSS, JavaScript</p>
                 </div>
-
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quod aperiam magni voluptate dolorum? Obcaecati.
-                </p>
             </div>
-            <div class="serve">
-                <div class="right">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="100" height="100">
-              <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
-              <path
-                d="M400 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM224 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm176-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h328c6.6 0 12 5.4 12 12v312z"
-              />
-            </svg>
-                    <h3>Responsive</h3>
+            <div class="box">
+                <i class="fas fa-server"></i>
+                <div class="text">
+                    <h2>Client sevices</h2>
+                    <p>
+                        I can help you with your website development, hosting, maintenance, and support.
+                    </p>
                 </div>
-
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quod aperiam magni voluptate dolorum? Obcaecati.
-                </p>
             </div>
-            <div class="serve">
-                <div class="right">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100" height="100">
-              <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
-              <path
-                d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z"
-              />
-            </svg>
-                    <h3>Daily Service</h3>
+            <div class="box">
+                <i class="fas fa-mobile-alt"></i>
+                <div class="text">
+                    <h2>Responsive</h2>
+                    <p>Your website will be responsive on all devices</p>
                 </div>
-
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quod aperiam magni voluptate dolorum? Obcaecati.
-                </p>
             </div>
-            <div class="serve">
-                <div class="right">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="100" height="100">
-              <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
-              <path
-                d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
-              />
-            </svg>
-                    <h3>Clean Code</h3>
+            <div class="box">
+                <i class="fas fa-laptop-code"></i>
+                <div class="text">
+                    <h2>Clean Code</h2>
+                    <p>
+                        I use best practices and code standards to write clean and efficient code.
+                    </p>
                 </div>
-
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quod aperiam magni voluptate dolorum? Obcaecati.
-                </p>
             </div>
         </div>
     </section>
-    <section class="our-skills" id="skills">
-        <h2 class="main-title">Skills</h2>
+    <section class="skills" id="skills">
+        <div class="main-title">
+            <h1>Skills</h1>
+        </div>
         <div class="container">
-            <img src="/website/images/gallery/progress.png" alt="" width="400px" />
-            <div class="skills">
-                <div class="skill">
-                    <h3>HTML <span>95%</span></h3>
-                    <div class="the-progress">
-                        <span style="width: 95%"></span>
+            <div class="skill-card">
+                <div class="box">
+                    <div class="precent">
+                        <svg>
+                <circle cx="70" cy="70" r="70" />
+                <circle cx="70" cy="70" r="70" />
+              </svg>
+                        <div class="number">
+                            <h2>95<span>%</span></h2>
+                        </div>
                     </div>
+                    <div class="text"><i class="fab fa-html5"></i></div>
                 </div>
-                <div class="skills">
-                    <div class="skill">
-                        <h3>CSS <span>75%</span></h3>
-                        <div class="the-progress">
-                            <span style="width: 75%"></span>
+            </div>
+            <div class="skill-card">
+                <div class="box">
+                    <div class="precent">
+                        <svg>
+                <circle cx="70" cy="70" r="70" />
+                <circle cx="70" cy="70" r="70" />
+              </svg>
+                        <div class="number">
+                            <h2>80<span>%</span></h2>
                         </div>
                     </div>
-                    <div class="skills">
-                        <div class="skill">
-                            <h3>JavaScript <span>35%</span></h3>
-                            <div class="the-progress">
-                                <span style="width: 35%"></span>
-                            </div>
-                        </div>
-                        <div class="skills">
-                            <div class="skill">
-                                <h3>Python <span>60%</span></h3>
-                                <div class="the-progress">
-                                    <span style="width: 60%"></span>
-                                </div>
-                            </div>
+                    <div class="text"><i class="fab fa-css3"></i></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="box">
+                    <div class="precent">
+                        <svg>
+                <circle cx="70" cy="70" r="70" />
+                <circle cx="70" cy="70" r="70" />
+              </svg>
+                        <div class="number">
+                            <h2>35<span>%</span></h2>
                         </div>
                     </div>
+                    <div class="text"><i class="fab fa-js-square"></i></div>
                 </div>
             </div>
         </div>
     </section>
     <section class="contact" id="contact">
-        <h2 class="main-title">Contact Me</h2>
+        <div class="main-title">
+            <h1>Contact</h1>
+        </div>
         <div class="container">
-            <div class="mine">
-                <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
-                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
-                <a href="#"><i class="fab fa-github"></i>GitHub</a>
-                <a href="+9647713926483"><i class="fas fa-phone"></i>Phone Number</a>
+            <div class="mail">
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <textarea name="mail" placeholder="Email" cols="30" rows="10">
+          </textarea>
+                <button type="submit">
+            <a href="mailto:ameralazawi69@gmail.com">Send</a>
+          </button>
             </div>
-            <div class="email">
-                <form>
-                    <label for="name">your name</label>
-                    <input type="text" name="name" />
-                    <label for="message">Message</label>
-                    <textarea name="message" id="" cols="30" rows="10"></textarea>
-                    <a href="mailto:ameralazawi69@gmail.com">Send email</a>
-                </form>
+            <div class="media">
+                <a href="https://www.facebook.com/profile.php?id=100041343831580" target="_blank" name="facebook">facebook<i class="fab fa-facebook fa-2x"></i></a>
+                </a>
+                <a href="#" name="twitter">twitter<i class="fab fa-twitter fa-2x" ></i></a>
+                <a href="https://www.instagram.com/mr.code34/" target="_blank" name="instagram">instagram<i class="fab fa-instagram fa-2x"></i></a>
+                </a>
+                <a href="https://github.com/Mrcode93" target="_blank" name="github">github<i class="fab fa-github fa-2x"></i></a>
+                </a>
+                <a href="https://codepen.io/pjbfuzho-the-reactor" target="_blank" name="codepen">codepen<i class="fab fa-codepen fa-2x"></i
+          ></a>
             </div>
         </div>
     </section>
-
-    <p class="copyright">Made With &copy; By Mr.Code</p>
+    <div class="top"> -->
+        <i class="fas fa-chevron-up"></i>
+    </div>
     <script src="main.js"></script>
+    <script src="anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </body>
 
 </html>

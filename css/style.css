@@ -1,7 +1,7 @@
 :root {
     --main-clr: #316bd7;
     --h1-clr: #ffffff;
-    --second-clr: #5b5b5b;
+    --second-clr: #828282;
     --btn-clr: linear-gradient(to right, #4e33ff, #f56695);
     --main-transition: all 0.3s;
     --main-padding-top: 100px;
@@ -75,6 +75,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .header {
@@ -90,7 +91,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 3px 0px 30px #387cfbb5;
+    /* box-shadow: 3px 0px 30px #387cfbb5; */
 }
 
 .navigation {
@@ -284,18 +285,41 @@ body .bars {
 }
 
 .landing .description p {
-    color: var(--main-clr);
+    color: var(--second-clr);
     margin-top: 20px;
-    margin-bottom: 40px;
     max-width: 80%
 }
 
-.landing .description button {
-    margin-top: 40px;
+.landing .description .button {
+    margin-top: 30px;
+    width: 100px;
+    height: 50px;
+    background-color: var(--main-clr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.landing .description .button:hover {
+    background-color: white;
+    border: 2px solid var(--main-clr)
+}
+
+.landing .description .button:hover a {
+    color: var(--main-clr);
 }
 
 .landing .description a {
-    color: var(--main-clr);
+    color: #fff;
 }
 
 .landing .image-holder {
@@ -317,7 +341,7 @@ body .bars {
 @media (max-width: 768px) {
     .landing .container {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        padding-left: 50px;
+        padding-left: 70px;
         padding-right: 10px;
     }
     .landing .image-holder {
@@ -332,6 +356,7 @@ body .bars {
     width: 85%;
     position: relative;
     z-index: 100;
+    overflow-x: hidden;
 }
 
 .project .container {
@@ -348,10 +373,13 @@ body .bars {
 
 .project .container .box {
     overflow: hidden;
-    box-shadow: 0px 0px 20px #387cfb64;
+    box-shadow: 0px 0px 20px #00000064;
     border-radius: 10px;
     z-index: 150;
-    background-color: #fff
+    background-color: #fff;
+    position: relative;
+    height: 200px;
+    transition: var(--main-transition);
 }
 
 .project .container .box img {
@@ -366,21 +394,317 @@ body .bars {
     }
 }
 
+.project .container .box .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: var(--main-transition);
+}
+
+.box .text h1 {
+    position: absolute;
+    top: -100px;
+    transition: var(--main-transition);
+    width: 100%;
+    text-align: center;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--second-clr)
+}
+
+.box .text a {
+    position: absolute;
+    bottom: -100px;
+    transition: var(--main-transition);
+    width: 105%;
+    text-align: center;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-clr);
+    font-size: 40px
+}
+
+.project .container .box:hover img {
+    opacity: 0.4;
+}
+
+.project .container .box:hover h1 {
+    top: -22px;
+    background-color: rgb(255, 255, 255);
+}
+
+.project .container .box:hover a {
+    bottom: 0.5px;
+    background-color: rgb(255, 255, 255);
+}
+
 
 /* ================================================================ */
 
+.services {
+    width: 85%;
+    position: relative;
+    z-index: 100;
+    overflow-x: hidden;
+}
+
+.services .container {
+    padding-top: 150px;
+    padding-bottom: var(--main-padding-bottom);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+    padding-left: 300px;
+    padding-right: 10px;
+    z-index: 100;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.services .container .service {
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #387cfb64;
+    border-radius: 10px;
+    z-index: 150;
+    background-color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: var(--main-transition);
+}
+
+@media (max-width: 768px) {
+    .services .container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        padding-left: 70px;
+        padding-right: 10px;
+    }
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+}
+
+.service i {
+    font-size: 125px;
+    color: var(--main-clr);
+}
+
+.service h1 {
+    letter-spacing: 1.4px;
+}
+
+.service p {
+    color: var(--second-clr)
+}
+
+
+/*================================================================*/
+
+.skills {
+    width: 85%;
+    position: relative;
+    z-index: 100;
+    overflow-x: hidden;
+}
+
+.skills .container {
+    padding-top: 150px;
+    padding-bottom: var(--main-padding-bottom);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 40px;
+    padding-left: 300px;
+    padding-right: 10px;
+    z-index: 100;
+    position: relative;
+}
+
+.skills .container .box {
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #00000064;
+    border-radius: 10px;
+    z-index: 150;
+    background-color: #fff;
+    position: relative;
+    height: 200px;
+    transition: var(--main-transition);
+}
+
+@media (max-width: 768px) {
+    .skills .container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        padding-left: 70px;
+        padding-right: 10px;
+    }
+}
+
+.skill .progress {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(26, 186, 255, 0.654);
+    margin: 10px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--main-clr);
+    transition: width .7s linear;
+    -webkit-transition: width .7s linear;
+    -moz-transition: width .7s linear;
+    -ms-transition: width .7s linear;
+    -o-transition: width .7s linear;
+}
+
+#html {
+    width: 90%;
+}
+
+#css {
+    width: 85%
+}
+
+#js {
+    width: 45%
+}
+
+#python {
+    width: 35%
+}
+
+
+/* ================================================================ */
+
+.contact {
+    width: 85%;
+    position: relative;
+    z-index: 100;
+    overflow-x: hidden;
+}
+
+.contact .container {
+    padding-top: 150px;
+    padding-bottom: var(--main-padding-bottom);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 40px;
+    padding-left: 300px;
+    padding-right: 10px;
+    z-index: 100;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .contact .container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        padding-left: 70px;
+        padding-right: 10px;
+    }
+}
+
+.contact .container .box {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .container .box p {
+    color: var(--second-clr);
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.contact .container .box .social-media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: var(--main-clr);
+    border-radius: 10px;
+}
+
+.contact .container .box a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 10px
+}
+
+.contact .container .box i {
+    font-size: 40px;
+    color: rgb(255, 255, 255)
+}
+
+
+/* ================================================================ */
+
+footer {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--main-clr)
+}
+
+footer p {
+    color: #fff
+}
+
+
+/* =============================================================== */
+
 .name {
     position: absolute;
-    top: 12%;
-    left: 30%;
+    top: 8%;
+    left: 70%;
     transform: translate(-50%, -59%);
-    color: rgba(5, 76, 169, 0.168);
-    font-size: 30px;
+    color: var(--main-clr);
+    font-size: 25px;
     -webkit-transform: translate(-50%, -59%);
     -moz-transform: translate(-50%, -59%);
     -ms-transform: translate(-50%, -59%);
     -o-transform: translate(-50%, -59%);
     z-index: 2;
+    width: 100%;
+    opacity: 0.5;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.name:hover {
+    opacity: 1;
 }
 
 .container::before {
@@ -391,8 +715,8 @@ body .bars {
     left: 10px;
     background: rgb(31, 152, 255);
     background: linear-gradient(121deg, rgba(31, 152, 255, 1) 0%, rgba(13, 96, 159, 1) 61%, rgba(8, 81, 134, 1) 85%, rgba(1, 52, 103, 1) 100%);
-    width: 100%;
-    height: 20%;
+    width: 90%;
+    height: 100px;
     color: rgb(255, 248, 248);
     z-index: -1;
     font-size: 6em;

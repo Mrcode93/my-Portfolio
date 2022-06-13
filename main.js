@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ],
     });
     anime({
-        targets: ".image-holder img",
+        targets: ".image-holder",
         translateX: [{
                 value: -2000,
                 duration: 0,
@@ -114,3 +114,10 @@ document.addEventListener("load", () => {});
 //         top: 0,
 //     });
 // });
+let project = document.querySelector(".project");
+let landing = document.querySelector(".landing");
+let service = document.querySelector(".service");
+let skills = document.querySelector(".skills");
+let contact = document.querySelector(".contact");
+
+let array = [project, landing];

@@ -1,6 +1,6 @@
 let ul = document.querySelector("ul");
 let navLink = document.querySelectorAll("ul li");
-let loader = document.querySelector(".loader");
+let loader = document.querySelector(".loading");
 //set active class to list of links
 for (let i = 0; i < navLink.length; i++) {
     navLink[i].onclick = function() {
@@ -16,7 +16,6 @@ for (let i = 0; i < navLink.length; i++) {
 //landing page anime
 let h1 = document.querySelector(".landing h1");
 document.addEventListener("DOMContentLoaded", () => {
-    loader.style.display = "none";
     anime({
         targets: "ul li",
         translateX: [
@@ -97,27 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ],
     });
 });
-// set anime for loader
-
-document.addEventListener("load", () => {});
-//
-// let toTop = document.querySelector(".top");
-// window.onscroll = () => {
-// if (window.scrollY > 900) {
-//     toTop.style.display = "flex";
-// } else {
-//     toTop.style.display = "none";
-// }
-// };
-// toTop.addEventListener("click", () => {
-//     window.scrollTo({
-//         top: 0,
-//     });
-// });
-let project = document.querySelector(".project");
-let landing = document.querySelector(".landing");
-let service = document.querySelector(".service");
-let skills = document.querySelector(".skills");
-let contact = document.querySelector(".contact");
-
-let array = [project, landing];
+// set loader when window is loaded
+window.onload = function() {
+    loader.style.display = "none";
+};

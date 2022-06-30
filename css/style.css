@@ -2,7 +2,6 @@
     --main-clr: #316bd7;
     --h1-clr: #ffffff;
     --second-clr: #828282;
-    --btn-clr: linear-gradient(to right, #4e33ff, #f56695);
     --main-transition: all 0.3s;
     --main-padding-top: 100px;
     --main-padding-bottom: 100px;
@@ -415,11 +414,11 @@ body .bars {
 }
 
 .project .container .box:hover img {
-    opacity: 0.4;
+    opacity: 1;
 }
 
 .project .container .box:hover h1 {
-    top: -22px;
+    top: 0px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -659,7 +658,7 @@ body .bars {
 
 footer {
     width: 100%;
-    height: 30px;
+    height: 35px;
     text-align: center;
     padding: 10px;
     background-color: var(--main-clr)
@@ -691,20 +690,22 @@ footer p {
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
+    font-size: 3em;
 }
 
 .name:hover {
     opacity: 1;
 }
 
-.container::before {
+
+/* .container::before {
     counter-increment: section;
     content: "";
     position: absolute;
     bottom: 0;
     left: 10px;
     background: rgb(31, 152, 255);
-    background: linear-gradient(121deg, rgba(31, 152, 255, 1) 0%, rgba(13, 96, 159, 1) 61%, rgba(8, 81, 134, 1) 85%, rgba(1, 52, 103, 1) 100%);
+    background-image: linear-gradient(121deg, rgba(31, 151, 255, 0.332) rgba(13, 96, 159, 0.151));
     width: 90%;
     height: 100px;
     color: rgb(255, 248, 248);
@@ -714,7 +715,7 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 
 /* ================================================================ */
@@ -725,11 +726,11 @@ footer p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000;
     z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #000;
 }
 
 .loading p {
@@ -784,5 +785,13 @@ footer p {
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .loading p {
+        color: #fff;
+        letter-spacing: 10px;
+        font-size: 20px;
     }
 }
